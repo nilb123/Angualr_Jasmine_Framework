@@ -1,0 +1,21 @@
+<div class="layout">
+  <h1 class="page-title">Sign Up</h1>
+  <form class="signup-form" [formGroup]="registerForm" (ngSubmit)="submitForm()">
+    <div class="ctrl-row --username">
+      <label for="username" class="ctrl-label">Username</label>
+      <input type="text" class="ctrl" id="username" name="username" autocomplete="off" formControlName="username">
+    </div>
+
+    <div class="ctrl-row --password">
+      <label for="password" class="ctrl-label">Password</label>
+      <input type="password" class="ctrl" id="password" name="password" autocomplete="off" formControlName="password">
+    </div>
+  
+    <div class="ctrl-row --email">
+      <label for="email" class="ctrl-label">E-mail</label>
+      <input type="email" class="ctrl" id="email" name="email" autocomplete="off" formControlName="email">
+    </div>
+   
+    <button class="submit-btn" type="submit">Submit</button>
+  </form>
+</div>
